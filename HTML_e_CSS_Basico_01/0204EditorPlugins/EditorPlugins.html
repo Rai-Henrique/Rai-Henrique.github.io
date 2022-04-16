@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor Plugins</title>
+  <link rel="stylesheet" href="/HTML_e_CSS_Basico_01/0201Tag/tag.css">
+</head>
+
+<body>
+  <p><a href="/index.html">Início.</a></p>
+  <ul>
+    <li>Live Server
+      <ul>
+        <li>https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+          <ul>
+            <li>
+              <p>Utilizado para atualizar automaticamente a página ao inserirmos uma nova mudança no arquivo.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <br>
+
+  <ul>
+    <li>Prettier
+      <ul>
+        <li>https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+          <ul>
+            <li>Serve para formatar automaticamente o documento pelo próprio Visual Studio Code.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <br>
+
+  <h3>Open Settings (JSON)</h3>
+  <p>{
+    "workbench.colorTheme": "Origamid Next",<br>
+    "workbench.iconTheme": "origamid-next-icons",<br>
+    "editor.fontSize": 16,<br>
+    "editor.lineHeight": 1.75,<br>
+    "editor.tabSize": 2,<br>
+    "workbench.startupEditor": "newUntitledFile",<br>
+    "editor.wordWrap": "on", <strong>Refere-se à quebra de linha de acordo com a expansão da tela do VSCode.</strong><br>
+    "editor.minimap.renderCharacters": false,<br>
+    "telemetry.telemetryLevel": "off", <strong>Refere-se a envios de erros do VSCode para microsoft.</strong><br>
+    "security.workspace.trust.untrustedFiles": "open",<br>
+    "breadcrumbs.filePath": "off", <strong>Refere-se à indicação de onde estamos em cada tag no VSCode.</strong><br>
+    "outline.icons": false,<br>
+    "liveServer.settings.donotShowInfoMsg": true,<br>
+    "liveServer.settings.donotVerifyTags": true,<br>
+    "editor.formatOnSave": true, <strong>Serve para organizar o código automaticamente após dar um ctrl+s.</strong><br>
+    "html.format.wrapAttributes": "auto",<br>
+    "html.format.wrapLineLength": 0,<br>
+    "html.autoClosingTags": false, <strong>Serve para quando formos abrir uma tag ela não irá fechar automaticamente.</strong><br>
+    "editor.defaultFormatter": "esbenp.prettier-vscode",<br>
+    "[html]": { <br>
+    "editor.defaultFormatter": "vscode.html-language-features"<br>
+    }
+    } <strong>, Essa tag quer dizer que para o formatador padrão seja o prettier e o VSCode, porém para o html eu quero que o editor padrão seja o VSCode.</strong></p>
+</body>
+
+</html>
