@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Caminhos</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <a href="/index.html">Início</a>
+  <h1>Link Caminhos.</h1>
+
+  <ul>
+    <li>Absoluto
+      <ul>
+        <li>
+          Usado para arquivos externos ao nosso site.
+        </li>
+      </ul>
+      <ul>
+        <li><a href="https://www.origamid.com/cursos/">Origamid Cursos</a>
+          <ul>
+            <li>
+              < a href="https://www.origamid.com/cursos/">Origamid Cursos< /a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Relativo
+      <ul>
+        <li>
+          Usado para arquivos internos do site.
+        </li>
+      </ul>
+      <ul>
+        <li><a href="/produtos/bicicletas.html">Bicicletas</a>
+          <ul>
+            <li>
+              < a href="/produtos/bicicletas.html">Bicicletas< /a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr>
+
+  <h2>Caminho Relativo.</h2>
+  <ul>
+    <li><strong>/</strong>index.html
+      <ul>
+        <li>
+          Ou seja, o arquivo index.html está no diretório raiz <strong>/</strong>.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><strong>/</strong>produtos<strong>/</strong>bicicletas.html
+      <ul>
+        <li>
+          Ou seja, o arquivo bicicletas.html está no diretório <strong>/produtos</strong> localizado na raiz.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>index.html ou <strong>./</strong>index.html
+      <ul>
+        <li>
+          Ou seja, o arquivo index.html está no diretório atual <strong>./</strong>.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><strong>../</strong>index.html
+      <ul>
+        <li>
+          Ou seja, procure pelo arquivo index.html em um diretório anterior ao atual <strong>../</strong>.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><strong>../../</strong>index.html
+      <ul>
+        <li>
+          Ou seja, procure pelo arquivo index.html nos dois diretórios anteriores ao atual.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr>
+</body>
+
+</html>
