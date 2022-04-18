@@ -15,13 +15,17 @@ li {
   text-decoration: none;
 }
 
-.hoje{
+.hoje {
   color: darkred;
 }
-.amanha{
+.amanha {
   color: darkblue;
 }
 
-a{
+a {
   color: seagreen;
+}
+
+h2 a {
+  text-decoration: none;
 }
