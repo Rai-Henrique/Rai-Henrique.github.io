@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilos do Browser</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <a href="/index.html">Início.</a>
+
+  <h1>Estilos do Browser</h1>
+
+  <ul>
+    <li>Padrão
+      <ul>
+        <li>Os browsers possuem um css inicial que é aplicado ao documento.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>h1 vs p
+      <ul>
+        <h1> h1- Curso de HTML.</h1>
+        <img src="./css-h1.png" alt="">
+        <p> p- Curso de HTML.</p>
+        <img src="./css-p.png" alt="">
+        <li>Por isso quando marcamos um h1 o texto fica maior/negrito em relação a um texto marcado com um p.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr>
+
+
+  <h3>Embora os browsers fazem esforços para manter os estilos iniciais iguais, ainda sim pode haver diferenças entre eles. Com isso algumas soluções foram criadas para lidar com os estilos iniciais. O principal objetivo delas é reduzir a inconsistência entre os browsers através do:</h3>
+  <h3>Reset, Reboot e Normalize.</h3>
+  <h4>Reset:</h4>
+  <ul>
+    <li>Remove parte dos estilos iniciais.</li>
+  </ul>
+  <p><a href="https://meyerweb.com/eric/tools/css/reset/">link.</a></p>
+
+  <h4>Reboot:</h4>
+  <ul>
+    <li>É uma mistura de reset e normalize utilizada pelo Bootstrap.</li>
+  </ul>
+  <p><a href="https://raw.githubusercontent.com/twbs/bootstrap/main/dist/css/bootstrap-reboot.css">link.</a></p>
+
+  <h4>Normalize:</h4>
+  <ul>
+    <li>Normaliza os estilos iniciais entre os browsers sem remover os mesmos.</li>
+  </ul>
+  <p><a href="https://necolas.github.io/normalize.css/">link.</a></p>
+
+  <hr>
+
+  <h2>inherit (herança)</h2>
+  <p>Existem propriedades do CSS que são passadas do pai para o filho como uma herança (inherit).</p>
+
+  <ul>
+    <li>Exemplos
+      <ul>
+        <li>color, font-size, font-family e outras.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Padrão vs Herança
+      <ul>
+        <li>O valor padrão irá escrever por cima da herança. Por isso ao definirmos uma color no body, os <strong>
+            < a>
+          </strong> não mudam de cor.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr>
+
+  <h1>Prática(inherit).</h1>
+
+  <div>
+    <h1>Curso de HTML</h1>
+    <h2>Curso de Designer</h2>
+
+
+    <button>clique</button>
+    <p>-> mesmo com a cor definida no pai, não mudou a cor por ter sua cor padrão.</p> <br>
+    <button class="inherit">clique</button>
+    <p>-> poderia usar apenas o seletor <strong>button {color: inherit;}</strong>e sua cor herdará do pai. Também poderia usar apenas o seletor <strong>buttom {color: seagreen;}</strong></p>
+
+
+    <h3>Curso de CSS</h3>
+
+
+    <a href="#">Curso de Javascript</a> <br>
+    <p>-> mesmo com a cor definida no pai, não mudou a cor por ter sua cor padrão.</p>
+    <a class="a" href="#">Curso de Javascript</a> <br>
+    <p>-> poderia usar apenas o seletor <strong>a {color: seagreen;}</strong> ou <strong>a {color: inherit;}</strong> e sua cor herdará do pai.</p>
+
+    <hr>
+  </div>
+</body>
+
+</html>

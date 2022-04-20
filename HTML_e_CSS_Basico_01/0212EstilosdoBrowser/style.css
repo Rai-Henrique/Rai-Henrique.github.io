@@ -1,0 +1,18 @@
+div {
+  color: seagreen;
+}
+
+
+p {
+  color: #000;
+}
+
+
+.inherit{
+  color: inherit;
+}
+
+
+.a{
+  color: seagreen;
+}
