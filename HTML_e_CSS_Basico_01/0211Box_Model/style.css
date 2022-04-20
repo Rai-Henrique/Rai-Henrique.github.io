@@ -1,0 +1,49 @@
+img {
+  max-width: 100%;
+}
+.caixa {
+  width: 500px;
+}
+.boxmodel {
+  max-width: 100%;
+  width: 500px;
+}
+
+.background {
+  background: green;
+}
+
+.width {
+  background: green;
+  width: 140px;
+}
+
+.widthheight {
+  background: green;
+  width: 140px;
+  height: 80px;
+}
+
+.widthheightpadding {
+  background: green;
+  width: 140px;
+  height: 80px;
+  padding: 20px;
+}
+
+.marginn {
+  background: green;
+  width: 140px;
+  height: 80px;
+  padding: 20px;
+  border: 10px solid #000;
+}
+
+.widthheightpaddingbordermargin {
+  background: green;
+  width: 140px;
+  height: 80px;
+  padding: 20px;
+  border: 10px solid #000;
+  margin: 30px;
+}

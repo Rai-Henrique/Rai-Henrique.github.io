@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model 1</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <h1>Box Model</h1>
+
+  <h2>Caixas:</h2>
+  <p>Uma interface web é composta de diversas caixas que organizam o conteúdo.</p>
+  <div class="caixa">
+    <img src="./css-caixas.png" alt="">
+  </div>
+
+  <hr>
+
+  <h2>Box Model</h2>
+  <ul>
+    <li>Content (conteúdo):
+      <ul>
+        <li>Define a largura inicial da caixa (salvo elementos de bloco).</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Padding (preenchimento):
+      <ul>
+        <li>Separa o conteúdo das bordas da caixa. É a margem interna.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Border (borda):
+      <ul>
+        <li>Define bordas para a caixa.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Margin (margem):
+      <ul>
+        <li>Define a distância entre uma caixa e outra.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Width (largura):
+      <ul>
+        <li>A largura total da caixa, por padrão é o somatório do conteúdo + padding (left/right) + border (left/right).</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Height (altura):
+      <ul>
+        <li>A largura total da caixa, por padrão é o somatório do conteúdo + padding (top/bottom) + border (top/bottom).</li>
+      </ul>
+    </li>
+  </ul>
+
+  <img class="boxmodel" src="./css-boxmodel.png" alt="">
+
+  <hr>
+
+  <h2>Pixel</h2>
+
+  <ul>
+    <li>Unidade de referência:
+      <ul>
+        <li>É a unidade de referência da Web, pois as telas são desenvolvidas em pixels.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Monitores:
+      <ul>
+        <li>Um monitor de: 3840 (largura em px) x 2160 (altura em px) = 8.294.400.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>px em CSS:
+      <ul>
+        <li>No CSS o pixel (px) é uma unidade de referência e não representa 1 pixel exato do seu dispositivo (é adaptável em relação à densidade da tela), pois a tela de um smartphone pode conter mais pixels que a tela de um desktop.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <hr>
+
+  <h2>div:</h2>
+  A <<strong>div</strong>> é um elemento de bloco block genérico que serve para auxiliar no posicionamento dos elementos/conteúdo na tela.
+    <br>
+    <p>Existem também elementos semânticos como <strong>main, section, nav</strong> e outros que veremos em outras aulas.</p>
+
+    <hr>
+
+    <h1>Praticando</h1>
+    <div class="background">Elemento div apenas com background</div>
+    <br>
+
+    <hr>
+
+    <div class="width">width: 140px; </div>
+    <br>
+
+    <hr>
+
+    <div class="widthheight">width: 140px; e height: 80px; </div>
+    <br>
+
+    <hr>
+
+
+    <div class="widthheightpadding">width: 140px; <br> height: 80px; <br> padding: 20px;</div>
+    <p>Ao ter adicionado: <strong>width: 140px;</strong> e posteriormente <strong>height: 80px; </strong>, o <strong>padding: 20px;</strong> irá somar:</p>
+    <ul>
+      <li>width: 140px+20px(do meio para esquerda)+20px(do meio para a direita)=180px de width.</li>
+      <li>height: 80px+20px(do meio para baixo)+20px(do meio para cima)=120px de height.
+        <ul>
+          <li>Ou seja, 180 x 120</li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr>
+
+    <div class="marginn">width: 140px; <br> height: 80px; <br> padding: 20px; <br> border: 10px;</div>
+    <p>Ao ter adicionado: <strong>width: 140px;</strong>/ <strong>height: 80px; </strong>/ <strong>padding: 20px;</strong>/ <strong>border:10px;</strong> irá somar:</p>
+    <ul>
+      <li>width: 180px+10px(do meio para esquerda)+10px(do meio para a direita)=200px de width.</li>
+      <li>height: 120px+10px(do meio para baixo)+10px(do meio para cima)=140px de height.
+        <ul>
+          <li>Ou seja, 200 x 140</li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr>
+
+    <div class="widthheightpaddingbordermargin"> width: 140px; <br> height: 80px; <br> padding: 20px; <br> border: 10px; <br>margin: 30px;</div>
+    <p>O fato do margin funcionar na parte exterior, ele não influenciará no tamanho da box.</p>
+
+    <hr>
+
+
+    <h4>Ferramentas para visualizar a medida de pixels e como usá-las:</h4>
+    <p>Tutorial de <a class="yt" href="https://www.youtube.com/watch?v=lc9PZxX6mIQ">como usar a extensão VisBug.</a> </p>
+    <p>Download:<a href="https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc"> Clique.</a></p>
+
+    <hr>
+
+</body>
+
+</html>
