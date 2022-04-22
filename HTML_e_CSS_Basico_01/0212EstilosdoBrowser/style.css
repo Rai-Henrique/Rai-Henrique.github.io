@@ -16,3 +16,8 @@ p {
 .a{
   color: seagreen;
 }
+
+
+a{
+  text-decoration: none;
+}

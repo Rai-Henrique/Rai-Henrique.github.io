@@ -1,0 +1,28 @@
+.voltar {
+  font-size: 20px;
+  background-color: rgba(10, 2, 2, 0.376);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+a {
+  background: #ddd;
+  padding: 10px;
+  text-decoration: none;
+  width: 160px;
+  height: 30px;
+  margin: 20px;
+}
+
+.inlineblock {
+  display: inline-block;
+}
+
+.esconde {
+  display: none;
+}
+
+div{
+  border: 1px solid red;
+}

@@ -1,0 +1,18 @@
+.voltar{
+font-size: 20px;
+background-color :rgba(10, 2, 2, 0.376);
+border-radius: 5px;
+text-decoration: none;
+}
+
+a{
+background: red;
+}
+
+span{
+background: green
+}
+
+div{
+background: blue;
+}

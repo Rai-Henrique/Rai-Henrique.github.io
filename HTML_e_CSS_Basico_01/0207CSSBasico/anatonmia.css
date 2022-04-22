@@ -4,3 +4,7 @@ img {
 div {
   width: 500px;
 }
+
+a{
+  text-decoration: none;
+}
