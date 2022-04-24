@@ -1,0 +1,22 @@
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  /* width: 600px; */
+  border: 1px solid black;
+}
+
+div{
+  background: #febe01;
+}
+
+.cima{
+width: 600px;
+}
+
+.baixo{
+width: 600px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=], initial-scale=1.0">
+  <title>Imagem</title>
+  <link rel="stylesheet" href="./imagem.css">
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+</head>
+
+<body>
+
+  <a href="/index.html">Início.</a>
+
+  <h1>Img</h1>
+  <p>A Tag < img> é utilizado para adicionarmos imagens à nossa página.</p>
+
+  <ul>SRC
+    <li>Atributo que define o caminho da imagem.</li>
+  </ul>
+
+  <ul>ALT
+    <li>Texto alternativo que será <strong>lido</strong> por leitores de tela(acessibilidade), robôs e que irá aparecer <strong>caso a imagem não carregue</strong>.</li>
+  </ul>
+
+  <ul>MAX-WIDTH: 100%;
+    <li>Geralmente definimos um width máximo para a imagem de 100%, <strong>assim ela não cresce além do elemento pai.</strong></li>
+  </ul>
+
+  <hr>
+
+  <h1>Por padrão as imagens vêm definidas como:</h1>
+  <p><strong>Display: inline-block;</strong>, por isso esse pequeno espaçamento entre elas como mostrado abaixo:</p>
+
+  <div>
+    <img src="./img/bicicleta.jpg" alt="Bicicletaa Preta">
+    <img src="./img/floresta.jpg" alt="Floresta">
+    <img src="./img/lobo.jpg" alt="Lobo">
+  </div>
+
+  <hr>
+
+  <p>Mudando para <strong>Display: block;</strong>, com isso as imagens ficarão grudadas uma da outra.</p>
+
+  <ul>Iportante, o <strong>Display: Block;</strong> deve ser definido nas imagens e não no elemento pai que está segurando elas(div) já que é para juntar as imagens e não divs.</ul>
+
+  <div>
+    <img class="block" src="./img/bicicleta.jpg" alt="Bicicletaa Preta">
+    <img class="block" src="./img/floresta.jpg" alt="Floresta">
+    <img class="block" src="./img/lobo.jpg" alt="Lobo">
+  </div>
+
+  <hr>
+
+  <h1>Resolução</h1>
+  <p>Por que usar <strong>max-width: 100%;</strong> no seletor <strong>img</strong> ao invés de <strong>width: 100%;</strong>? porque se eu usar <strong>width: 100%;</strong> até a imagem com resulção baixa irá ficar do tamanho total do elemento pai toda borrada, já a imagem com resolução alta não terá alterações como sendo mostrado abaixo:</p>
+
+  <img src="./img/bicicleta-300-200.jpg" alt="">
+  <img src="./img/bicicleta-1200-800.jpg" alt="">
+
+  <hr>
+
+  <h1>Imagem com resolução alta</h1>
+  <p><strong>img{<br>
+      max-width: 100%; <br>
+      }</strong></p>
+  <img class="alta" src="./img/bicicleta-1200-800.jpg" alt="">
+
+  <h1>Imagem com resolução baixa</h1>
+  <p><strong>img{<br>
+      width: 100%; <br>
+      }</strong></p>
+      <img class="baixa" src="./img/bicicleta-300-200.jpg" alt="">
+</body>
+
+</html>

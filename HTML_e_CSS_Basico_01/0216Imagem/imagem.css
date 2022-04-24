@@ -1,0 +1,23 @@
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+div {
+  width: 400px;
+}
+
+.block {
+  display: block;
+}
+
+.alta{
+  max-width: 100%;
+}
+
+.baixa{
+  width: 100%;
+}
