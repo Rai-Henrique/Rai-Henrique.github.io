@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prática</title>
+  <link rel="stylesheet" href="./Align_e_Justify_Content.css">
+  <link rel="stylesheet" href="./pratica.css">
+</head>
+
+<body>
+
+  <a class="voltar" href="./Align_e_Justify_Content.html">Voltar.</a>
+
+  <h1>Comércio eletrônico.</h1>
+
+  Importante: ao usar fr no elemento pai, não consigo usar nem justify e nem align. <br>
+  Porém, ao definir colunas com px, consigo usar todas as propriedades de justify e align. <br>
+  <strong>Colunas definidas com px:</strong>
+
+  <div class="grid">
+    <div class="item">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar" href="#">Comprar</a>
+    </div>
+
+    <div class="item">
+      <strong>elemento com fr</strong>
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar" href="#">Comprar</a>
+    </div>
+
+    <div class="item">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar" href="#">Comprar</a>
+    </div>
+
+    <div class="item">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar" href="#">Comprar</a>
+    </div>
+
+    <div class="item">
+      <strong>elemento com fr</strong>
+      <h2>Calça Jeans.</h2>
+      <p>Calça Jeans feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar" href="#">Comprar</a>
+    </div>
+
+    <div class="item">
+      <h2>Casaco Azul.</h2>
+      <p>Casaco Azul feito de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar" href="#">Comprar</a>
+    </div>
+  </div>
+
+  <hr>
+  <br>
+  <br>
+  <br>
+
+  <strong>Colunas definidas com fr</strong>(no caso não daria de usar nem justify e nem align <strong>a não ser nos filhos</strong>), pois o fr tem função de distribuir o espaço restante.: <br>
+
+  <div class="grid1">
+    <div class="item1">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar1" href="#">Comprar</a>
+    </div>
+
+    <div class="item">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar" href="#">Comprar</a>
+    </div>
+
+    <div class="item">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar" href="#">Comprar</a>
+    </div>
+
+    <div class="item1">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar1" href="#">Comprar</a>
+    </div>
+
+    <div class="item1">
+      <h2>Calça Jeans.</h2>
+      <p>Calça Jeans feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar1" href="#">Comprar</a>
+    </div>
+
+    <div class="item1">
+      <h2>Casaco Azul.</h2>
+      <p>Casaco Azul feito de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar1" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+  <br>
+
+
+  <p>Colunas definidas no <strong>auto</strong> significa que as caixas serão do <strong>tamanho do conteúdo</strong> dentro delas.</p>
+  <strong>Colunas definidas no auto.</strong>
+  <div class="grid2">
+    <div class="item2">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro de algodão com detalhes em azul-clarode algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar2" href="#">Comprar</a>
+    </div>
+
+    <div class="item2">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta.</p>
+      <p>R$ 40.</p>
+      <a class="comprar2" href="#">Comprar</a>
+    </div>
+
+    <div class="item2">
+      <h2>Calça Jeans.</h2>
+      <p>Calça Jeans feita de algodão com detalhes em azul-claro de algodão com detalhes em azul-claro de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar2" href="#">Comprar</a>
+    </div>
+
+    <div class="item2">
+      <h2>Casaco Azul.</h2>
+      <p>Casaco Azul .</p>
+      <p>R$ 40.</p>
+      <a class="comprar2" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+
+
+
+
+  <h1>justify-content.</h1>
+  <h2>Para alinhar ou justificar o conteúdo, deve ter espaço sobrando.</h2>
+  Alinha os itens horizontalmente.
+  <h3>justify-content: center;</h3>
+  Centraliza os itens filhos.
+  <p>Importante p/mim: não sendo definido <strong>fr</strong> no pai, conseguirei usar todos os valores de <strong>justify-content.</strong></p>
+  <div class="grid3">
+    <div class="item3">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar3" href="#">Comprar</a>
+    </div>
+
+    <div class="item3">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar3" href="#">Comprar</a>
+    </div>
+
+    <div class="item3">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar3" href="#">Comprar</a>
+    </div>
+
+    <div class="item3">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar3" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+
+  <h3>justify-content: space-between ;</h3>
+  <h4>Para alinhar ou justificar o conteúdo, deve ter espaço sobrando.</h4>
+  Define um espaçamento entre as colunas, mas as mesmas ficam coladas no body na horizontal.
+  <div class="grid4">
+    <div class="item4">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar4" href="#">Comprar</a>
+    </div>
+
+    <div class="item4">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar4" href="#">Comprar</a>
+    </div>
+
+    <div class="item4">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar4" href="#">Comprar</a>
+    </div>
+
+    <div class="item4">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar4" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+
+
+  <h3>justify-content: space-around;</h3>
+  <h4>Para alinhar ou justificar o conteúdo, deve ter espaço sobrando.</h4>
+  Define espaçamento maior entre as colunas e um menor entre o body na horizontal.
+  <div class="grid5">
+    <div class="item5">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar5" href="#">Comprar</a>
+    </div>
+
+    <div class="item5">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar5" href="#">Comprar</a>
+    </div>
+
+    <div class="item5">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar5" href="#">Comprar</a>
+    </div>
+
+    <div class="item5">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar5" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+
+
+
+  <h3>justify-content: space-evenly;</h3>
+  <h4>Para alinhar ou justificar o conteúdo, deve ter espaço sobrando.</h4>
+  Define espaçamento iguais entre as colunas, tanto no começo, meio e fim.
+  <div class="grid6">
+    <div class="item6">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar6" href="#">Comprar</a>
+    </div>
+
+    <div class="item6">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar6" href="#">Comprar</a>
+    </div>
+
+    <div class="item6">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar6" href="#">Comprar</a>
+    </div>
+
+    <div class="item6">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar6" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+
+
+  <h1>Align-Content.</h1>
+  Alinha os itens verticalmente
+  <p>Deve-se definir um heigh no pai para poder funcionar o Align-Content: end, space-around, space-between ou space-evenly, etc.</p>
+  <h3>Align-Content: center;</h3>
+  <h4>Para alinhar ou justificar o conteúdo, deve ter espaço sobrando.</h4>
+  <p>se fosse align-items, teria um espaço bem maior entre os itens.</p>
+  Centraliza os itens na vertical.
+  <div class="grid7">
+    <div class="item7">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar7" href="#">Comprar</a>
+    </div>
+
+    <div class="item7">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar7" href="#">Comprar</a>
+    </div>
+
+    <div class="item7">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar7" href="#">Comprar</a>
+    </div>
+
+    <div class="item7">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar7" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+
+
+  <h3>align-content: end;</h3>
+  <h4>Para alinhar ou justificar o conteúdo, deve ter espaço sobrando.</h4>
+  <p>se fosse align-items, teria um espaço bem maior entre os itens.</p>
+  Coloca os itens no fim em relação à vertical.
+  <div class="grid8">
+    <div class="item8">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar8" href="#">Comprar</a>
+    </div>
+
+    <div class="item8">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar8" href="#">Comprar</a>
+    </div>
+
+    <div class="item8">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar8" href="#">Comprar</a>
+    </div>
+
+    <div class="item8">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar8" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+
+
+
+  <h3>align-content: start;</h3>
+  <h4>Para alinhar ou justificar o conteúdo, deve ter espaço sobrando.</h4>
+  <p>se fosse align-items, teria um espaço bem maior entre os itens.</p>
+  Coloca os itens no início em relação à vertical.
+  <div class="grid9">
+    <div class="item9">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar9" href="#">Comprar</a>
+    </div>
+
+    <div class="item9">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar9" href="#">Comprar</a>
+    </div>
+
+    <div class="item9">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar9" href="#">Comprar</a>
+    </div>
+
+    <div class="item9">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar9" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+
+
+
+
+  <h3>align-content: stretch;</h3>
+  <h4>Para alinhar ou justificar o conteúdo, deve ter espaço sobrando.</h4>
+  <p>se fosse align-items, teria um espaço bem maior entre os itens.</p>
+  Preenche os itens em relação à vertical.
+  <div class="grid10">
+    <div class="item10">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar10" href="#">Comprar</a>
+    </div>
+
+    <div class="item10">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar10" href="#">Comprar</a>
+    </div>
+
+    <div class="item10">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar10" href="#">Comprar</a>
+    </div>
+
+    <div class="item10">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar10" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+
+
+
+  <h3>align-content: space-around;</h3>
+  <h4>Para alinhar ou justificar o conteúdo, deve ter espaço sobrando.</h4>
+  Define espaçamento maior entre as colunas e um menor entre o body na vertical.
+  <div class="grid11">
+    <div class="item11">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar11" href="#">Comprar</a>
+    </div>
+
+    <div class="item11">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar11" href="#">Comprar</a>
+    </div>
+
+    <div class="item11">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar11" href="#">Comprar</a>
+    </div>
+
+    <div class="item11">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar11" href="#">Comprar</a>
+    </div>
+  </div>
+
+
+  <hr>
+  <br>
+  <br>
+
+
+
+  <h3>align-content: space-between;</h3>
+  <h4>Para alinhar ou justificar o conteúdo, deve ter espaço sobrando.</h4>
+  Define um espaçamento entre as colunas, mas as mesmas ficam coladas no body na vertical.
+  Preenche os itens em relação à vertical.
+  <div class="grid12">
+    <div class="item12">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar12" href="#">Comprar</a>
+    </div>
+
+    <div class="item12">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar12" href="#">Comprar</a>
+    </div>
+
+    <div class="item12">
+      <h2>Camisa Polo.</h2>
+      <p>Camisa polo feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar12" href="#">Comprar</a>
+    </div>
+
+    <div class="item12">
+      <h2>Bermuda Preta.</h2>
+      <p>Bermuda Preta feita de algodão com detalhes em azul-claro.</p>
+      <p>R$ 40.</p>
+      <a class="comprar12" href="#">Comprar</a>
+    </div>
+  </div>
+  <h1>Faltando o Place-Content.</h1>
+</body>
+
+</html>
