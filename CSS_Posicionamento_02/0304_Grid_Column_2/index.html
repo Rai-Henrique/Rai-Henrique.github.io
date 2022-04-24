@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Column 1</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+</head>
+
+<body>
+
+  <a href="/index.html">Início.</a>
+  <div>
+    <h3>Grid Column</h3>
+    <ul><strong>grid-column(diferente de grid-templates-columnns)</strong>
+      <li>Posiciona o item na coluna desejada.</li>
+    </ul>
+
+    <ul><strong>1 / 3</strong>
+      <li>licoluna 1 até a linha 3.</li>
+    </ul>
+
+    <ul><strong>1 / -1</strong>
+      <li>Da linha 1 até a última linha.</li>
+    </ul>
+
+    <ul><strong>span 2 </strong>
+      <li>Expandir por 2 colunas.</li>
+    </ul>
+    <img src="./grid_columnErow.jpg" alt="">
+  </div>
+
+  <div class="grid">
+    <h1 class="titulo">Nimbus Stark</h1>
+    <span class="preco">R$ 39</span>
+    <img class="foto" src="/HTML_e_CSS_Basico_01/0216Imagem/img/bicicleta.jpg" alt="">
+    <p class="descricao">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+    <a class="comprar" href="#">Comprar</a>
+  </div>
+
+  <hr>
+
+
+  <h2>Colocando a img na coluna 2</h2>
+  <p>grid-column: 2;</p>
+  <div class="grid1">
+    <h1 class="titulo1">Nimbus Stark</h1>
+    <span class="preco1">R$ 39</span>
+    <img class="foto1" src="/HTML_e_CSS_Basico_01/0216Imagem/img/bicicleta.jpg" alt="">
+    <p class="descricao1">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+    <a class="comprar1" href="#">Comprar</a>
+  </div>
+
+
+  <hr>
+
+  <h2>Expandindo a img da coluna 1 até a última coluna.</h2>
+  <p>grid-column: 1/ -1; ou grid-column: 1/3;</p>
+  <div class="grid2">
+    <h1 class="titulo2">Nimbus Stark</h1>
+    <span class="preco2">R$ 39</span>
+    <img class="foto2" src="/HTML_e_CSS_Basico_01/0216Imagem/img/bicicleta.jpg" alt="">
+    <p class="descricao2">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+    <a class="comprar2" href="#">Comprar</a>
+  </div>
+
+  <hr>
+
+
+  <h2>Expandindo a descrição e o botão comprar da coluna 1 até a última coluna.</h2>
+  <p>grid-column: 1/ -1; ou grid-column: 1/3;</p>
+  <div class="grid3">
+    <h1 class="titulo3">Nimbus Stark</h1>
+    <span class="preco3">R$ 39</span>
+    <img class="foto3" src="/HTML_e_CSS_Basico_01/0216Imagem/img/bicicleta.jpg" alt="">
+    <p class="descricao3">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+    <a class="comprar3" href="#">Comprar</a>
+  </div>
+</body>
+
+</html>
