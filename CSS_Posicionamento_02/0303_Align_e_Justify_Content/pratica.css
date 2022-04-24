@@ -92,7 +92,6 @@ h2 {
 }
 
 .grid3 {
-  border: 1px solid;
   display: grid;
   gap: 10px;
   grid-template-columns: 400px 400px;
@@ -115,7 +114,6 @@ h2 {
 }
 
 .grid4 {
-  border: 1px solid;
   display: grid;
   gap: 10px;
   grid-template-columns: 400px 400px;
@@ -138,7 +136,6 @@ h2 {
 }
 
 .grid5 {
-  border: 1px solid;
   display: grid;
   gap: 10px;
   grid-template-columns: 400px 400px;
@@ -161,7 +158,6 @@ h2 {
 }
 
 .grid6 {
-  border: 1px solid;
   display: grid;
   gap: 10px;
   grid-template-columns: 400px 400px;
@@ -184,7 +180,6 @@ h2 {
 }
 
 .grid7 {
-  border: 1px solid;
   display: grid;
   height: 700px;
   gap: 10px;
@@ -209,7 +204,6 @@ h2 {
 }
 
 .grid8 {
-  border: 1px solid;
   display: grid;
   height: 700px;
   gap: 10px;
@@ -234,7 +228,6 @@ h2 {
 }
 
 .grid9 {
-  border: 1px solid;
   display: grid;
   height: 700px;
   gap: 10px;
@@ -259,7 +252,6 @@ h2 {
 }
 
 .grid10 {
-  border: 1px solid;
   display: grid;
   height: 700px;
   gap: 10px;
@@ -284,7 +276,6 @@ h2 {
 }
 
 .grid11 {
-  border: 1px solid;
   display: grid;
   height: 700px;
   gap: 10px;
@@ -309,7 +300,6 @@ h2 {
 }
 
 .grid12 {
-  border: 1px solid;
   display: grid;
   height: 700px;
   gap: 10px;
