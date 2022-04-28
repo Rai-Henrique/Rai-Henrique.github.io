@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propriedades Flexbox</title>
+  <link rel="stylesheet" href="./propiedades.css">
+</head>
+
+<body>
+
+  <a href="./index.html">Voltar.</a>
+  <br>
+  <a href="./difEntre_gridEflexbox.html">Diferença entre Grid e Flexbox.</a>
+
+  <h1>Propriedades Flex</h1>
+
+  <hr>
+
+  <ul><strong>flex-grow: 1;</strong>
+    <p>São geralmente usados nos filhos.</p>
+    <li>Na parte interna, cresce a partir do conteúdo.
+      <ul>
+        <li>Se esse elemento deve crescer para ocupar o espaço vazio. O 0 impede o crescimento, valores maiores que 0 funcionam como a unidade fr do css grid.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="flex">
+    <h2 class="flex-grow">O Senhor dos Anéis</h2>
+    <h2 class="flex-grow">Interestelar</h2>
+    <h2 class="flex-grow">O Hobbit</h2>
+    <h2 class="flex-grow">Titanic</h2>
+  </div>
+
+
+  <hr>
+
+
+  <ul>
+    <p><strong>flex-basis: 200px;</strong> Seu valor padrão é <strong>auto</strong> <br>
+      <li>Valor inicial antes de distribuir o espaço em branco.</li>
+    </p>
+  </ul>
+  <p><strong>flex-basis: 0;</strong> irá deixar as caixas do mesmo tamanho independente do tamanho do conteúdo das caixas.<strong>(já com o flex-grow: 1; adicionado)</strong></p>
+  <strong>Se o flex-basis estiver no auto e grow no 1</strong>, vai ficar como no exemplo de cima.
+  <div class="flex">
+    <h2 class="flex-basis">O Senhor dos Anéis</h2>
+    <h2 class="flex-basis">Interestelar</h2>
+    <h2 class="flex-basis">O Hobbit</h2>
+    <h2 class="flex-basis">Titanic</h2>
+  </div>
+  Geralmente será usado no <strong>auto ou no 0</strong>.
+
+
+  <hr>
+
+
+  <ul>
+    <p><strong>flex-shrink: 0;</strong> <br>
+      <li>Caso exista um valor de base, o flex-shrink irá determinar se esse valor pode ser reduzido ou não. 0 significa que ele não pode ser reduzido.</li>
+    </p>
+  </ul>
+
+  <div class="flex">
+    <h2 class="flex-shrink">O Senhor dos Anéis</h2>
+    <h2 class="flex-shrink">Interestelar</h2>
+    <h2 class="flex-shrink">O Hobbit</h2>
+    <h2 class="flex-shrink">Titanic</h2>
+  </div>
+
+  <hr>
+
+
+  <ul>
+    <h2>Recomendado.</h2>
+    <p><strong>flex: 1;</strong> <br>
+      <li>Atalho para <strong>flex-grow: 1; flex-shrink: 1; e flex-basis: 0;</strong></li>
+    </p>
+  </ul>
+
+  <div class="flex">
+    <h2 class="atalho">O Senhor dos Anéis</h2>
+    <h2 class="atalho">Interestelar</h2>
+    <h2 class="atalho">O Hobbit</h2>
+    <h2 class="atalho">Titanic</h2>
+  </div>
+
+  Simplificando:<br>
+  <strong>flex-grow: 1;</strong> quero que as caixas cresçam.<br>
+  <strong>flex-shrink: 1;</strong> quero que o conteúdo quebre conforme tamanho da tela.<br>
+  <strong>flex-basis: 0;</strong> que o espaço distribuído pelo grow seja igual, ou seja não importa o tamanho do conteúdo das caixas.<br>
+  <hr>
+</body>
+
+</html>

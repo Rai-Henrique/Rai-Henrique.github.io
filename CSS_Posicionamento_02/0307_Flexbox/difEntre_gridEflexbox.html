@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diferença entre Grid e Flexbox</title>
+  <link rel="stylesheet" href="./difEntre_gridEflexbox.css">
+</head>
+
+<body>
+
+  <a href="./propriedades.html">Voltar.</a>
+
+  <h1>flex vs grid</h1>
+
+  <p>Use ambos no seu layout, eles resolvem problemas diferentes. O <strong>Flexbox</strong> dá controle no total de itens por linha e o <strong>Grid</strong> te dá controle em todos os eixos, ou seja, organiza as caixas em <strong>colunas</strong>.</p>
+
+  <h1>Flexbox</h1>
+
+  <div class="flex">
+    <h2>O Senhor dos Anéis</h2>
+    <h2>Interestelar</h2>
+    <h2>O Hobbit</h2>
+    <h2>Titanic</h2>
+  </div>
+
+  <br>
+  <h1>Grid</h1>
+  <div class="grid">
+    <h2>O Senhor dos Anéis</h2>
+    <h2>Interestelar</h2>
+    <h2>O Hobbit</h2>
+    <h2>Titanic</h2>
+  </div>
+
+  <h3>Importante:</h3>
+  <p>No Flexbox, as caixas vão sendo posicionada uma ao lado da outra(após ativar o <strong>display: flex;</strong>),
+    <br>
+
+    No Grid, na propriedade grid-templates-columns com o valor (<strong>repeat: auto-fit</strong>, 100px); ou seja, se crio 5 caixas, serão criadas caixas de 100px uma ao lado da outra até não dá mais e aí sim irá pular para a outra linha, como no Flexbox. <br>
+    com caixas definidas em <strong>fr</strong> não funciona, pois fr preenche o espaço restante da caixa pai.
+  </p>
+  <li><strong>repeat(auto-fit, px)</strong>aqui serve para valores fixo em px. Com isso as caixas não vão pegar de ponta-ponta.</li>
+  <li><strong>repeat(auto-fit, minmax(valor em fr, px, etc))</strong> Aqui as caixas vão pegar de ponta-ponta.</li>
+  <br>
+  <hr>
+  <strong>repeat(auto-fit, px)</strong>
+
+  <div class="grid1">
+    <h2>O Senhor dos Anéis</h2>
+    <h2>Interestelar</h2>
+    <h2>O Hobbit</h2>
+    <h2>Titanic</h2>
+  </div>
+
+  <hr>
+
+  <strong>repeat(auto-fit, minmax(px, auto))</strong>
+  <ol>minmax
+    <li>valor min que a caixa pode ter.</li>
+    <li>valor max que a caixa pode ter.</li>
+  </ol>
+
+  <div class="grid2">
+    <h2>O Senhor dos Anéis</h2>
+    <h2>Interestelar</h2>
+    <h2>O Hobbit</h2>
+    <h2>Titanic</h2>
+  </div>
+
+  <hr>
+</body>
+
+</html>
