@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>z-index</title>
+  <link rel="stylesheet" href="./z_index.css">
 </head>
 
 <body>
@@ -14,6 +15,40 @@
 
   <h1>z-index</h1>
   <p>Define a posição no eixo z (profundidade) dos elementos que foram posicionados fora do fluxo (relative, fixed, absolute).</p>
+
+  <p>no css, o elemento que está embaixo(no código) é que fica por cima do elemento da linha anterior no site, ou seja, é como se fosse uma escada onde o primeiro degrau de baixo para cima seria o <strong>Elemento 5.</strong></p>
+
+  <p class="p">É o z-index que vai definir se o elemento vai ficar por cima de todos ou por baixo de todos, além disso deve haver uma definição de Position: ; </p> <br>
+  <p>|é como se o elemento 5 tivesse z-index: 5;|elemento 4 tivesse z-index: 4; |elemento 3 tivesse z-index: 3; |elemento 2 tivesse z-index: 2; |elemento 1 tivesse z-index: 1;</p> 
+
+  <h1 class="index1">Elemento 1</h1>
+  <h1 class="index2">Elemento 2</h1>
+  <h1 class="index3">Elemento 3</h1>
+  <h1 class="index4">Elemento 4</h1>
+  <h1 class="index5">Elemento 5</h1>
+  
+  
+  <p>o padrão é de baixo para cima, pois invertendo deve-se adicionar z-index em cada elemento.</p>
+  <p>o que tem o maior z-indez é que fica por cima de todos.</p>
+  Elemento1: z-index: 5;<br>
+  Elemento1: z-index: 4;<br>
+  Elemento1: z-index: 3;<br>
+  Elemento1: z-index: 2;<br>
+  Elemento1: z-index: 1;<br>
+  <h1 class="index11">Elemento 1</h1>
+  <h1 class="index22">Elemento 2</h1>
+  <h1 class="index33">Elemento 3</h1>
+  <h1 class="index44">Elemento 4</h1>
+  <h1 class="index55">Elemento 5</h1>
+  
+  
+  
+  <p class="p">elemento 3 com z-index: 5;, como os os outros elementoss não têm z-index definido, o elemento 3 fica por cima de todos.</p>
+  <h1 class="index111">Elemento 1</h1>
+  <h1 class="index222">Elemento 2</h1>
+  <h1 class="index333">Elemento 3</h1>
+  <h1 class="index444">Elemento 4</h1>
+  <h1 class="index555">Elemento 5</h1>
 </body>
 
 </html>
