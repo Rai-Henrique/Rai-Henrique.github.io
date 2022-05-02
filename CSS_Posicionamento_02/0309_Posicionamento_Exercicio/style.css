@@ -1,0 +1,119 @@
+body {
+  margin: 0px;
+  font-family: arial;
+  background: #f7f7f7;
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+  padding: 15px 30px;
+  background: #fff;
+}
+
+.img {
+  margin-top: 60px;
+}
+
+img {
+  max-width: 100%;
+  border-top-right-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1000px; /*o meu ficou grande porque nao tinha definido o maxwidth, por isso nao estava tao centralizado todo mo meu conteudo*/
+}
+
+.introducao {
+  background: #fff;
+  display: grid;
+  padding: 40px;
+  border-top-left-radius: 5px;
+  text-align: right;
+  position: relative;
+  align-content: center;
+  justify-items: end;
+  gap: 15px;
+}
+
+.botao {
+  background: #ee2211;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.detalhe {
+  position: absolute;
+  background: #ee2211;
+  width: 60px;
+  height: 4px;
+  right: -30px;
+  top: 30px;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.subtitulo {
+  font-size: 64px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  color: #c6c6c6;
+  margin-right: 40px;
+}
+
+.rodape {
+  background: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+.caracteristicas-item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+}
+
+.caracteristicas-item p {
+  grid-column: 2;
+}
+
+.caracteristicas {
+  background: #fff;
+  border-bottom-right-radius: 5px;
+  padding: 70px;
+  display: grid;
+  gap: 40px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
