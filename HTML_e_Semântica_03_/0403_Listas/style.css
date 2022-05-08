@@ -1,0 +1,19 @@
+.ul-limpo {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  background-color: bisque;
+}
+
+.ul-estilo {
+  list-style: square inside;
+  padding: 0px;
+  background-color: bisque;
+}
+
+/* ul, li{
+  list-style: none;
+} */
+dd {
+  /* margin: 0; */
+}

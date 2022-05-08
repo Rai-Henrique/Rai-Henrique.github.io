@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <a href="/index.html">Início.</a>
+
+  <h1>Listas</h1>
+
+  marca uma lista de itens sem ordem (unordered list). Cada item da lista deve ser marcado com uma li.
+  <h1>ul-lista não ordenada.</h1>
+  <p><strong>Exemplo:</strong></p>
+  <ul> ul
+    <li> li que está contindo dentro da ul </li>
+    <li> li que está contindo dentro da ul </li>
+    <li> li que está contindo dentro da ul </li>
+    <li> li que está contindo dentro da ul </li>
+  </ul>
+  <p><strong>Lista dentro de lista</strong></p>
+
+
+  <ul>ul
+    <li>li que está continda dentro da ul</li>
+    <ul>ul contida dentro da ul anterior
+      <li>li que está contindo dentro da ul que está contida dentro de outra ul</li>
+    </ul>
+  </ul>
+
+  <h1>ol-lista ordenada.</h1>
+  <h2>Lista de classificação:</h2>
+
+  <ol>
+    <li>Rai</li>
+    <li>Henrique</li>
+    <li>Alves</li>
+    <li>Da Silva</li>
+  </ol>
+
+  <h1>dl</h1>
+  <p><strong>marca uma lista de descrições (description list). A lista é criada com dois elementos < dt> e < dd></strong></p>
+  <ul>dt
+    <li>Marca o termo/frase a ser definido.</li>
+  </ul>
+  <ul>dd
+    <li>Marca a definição do termo acima.</li>
+  </ul>
+
+  <ul>Exemplos?</ul>
+  <h2>Perguntas frequentes</h2>
+  <dl>
+    <dt>Quais as formas de pagamento?</dt>
+    <dd>Dinheiro ou Cartão de Crédito.
+    <dt>Possui certificado?</dt>
+    <dd>Sim, emitimos certificados.
+    <dt>Qual seu nome?</dt>
+    <dd>Raí.</dd>
+  </dl>
+
+  <h1>CSS</h1>
+  <p>As listas não são utilizadas apenas para textos simples, é possível agruparmos uma lista de produtos em uma ul > li. Para isso geralmente removemos os estilos padrões definidos por listas.</p>
+
+  <h2>list-style</h2>
+  <p>Possui diferentes valores que definem o estilo dos marcadores da lista (disc, square e outros). O list-style define o tipo / imagem / posição (outside / inside).</p>
+
+  <ul class="ul-limpo">Produto 1
+    <ul>
+      <li>produto 1.1</li>
+      <li>produto 1.2</li>
+    </ul>
+  </ul>
+
+  <ul class="ul-estilo">Produto 2
+    <ul>
+      <ul>
+        <li>Produto1</li>
+        <li>Produto2</li>
+      </ul>
+    </ul>
+  </ul>
+</body>
+
+</html>
