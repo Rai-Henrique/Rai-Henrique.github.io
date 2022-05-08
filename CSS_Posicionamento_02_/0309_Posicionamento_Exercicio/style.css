@@ -88,7 +88,7 @@ p {
 .rodape {
   background: #fff;
   padding: 30px;
-  box-sizing: border-box;/*sempre utilizar no body ou na caixa que segura todos os itens. Porque vai evitar que seja estourada a borda da caixa body ou a caixa que esta dentro do body que segura x itens*/
+  box-sizing: border-box; /*sempre utilizar no body ou na caixa que segura todos os itens. Porque vai evitar que seja estourada a borda da caixa body ou a caixa que esta dentro do body que segura x itens*/
   width: 100%;
   text-align: center;
 }

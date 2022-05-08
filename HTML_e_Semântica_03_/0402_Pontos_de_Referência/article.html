@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article</title>
+  <link rel="stylesheet" href="article.css">
+</head>
+
+<body>
+
+  <a href="./index.html">
+    < </a>
+
+      <h1>article(no leitor de tela aparece article)</h1>
+      <p><strong>representa uma região do site que é autoexplicativa, ou seja, não precisa do restante do site para fazer sentido. Geralmente deve conter um título (h's). Deve ter um título contido.</strong></p>
+
+      <p><strong>
+          < article aria-label="um nome que aparecerá no leitor de tela.">
+        </strong></p>
+
+      <p><strong>Exemplos à parte:</strong></p>
+      <li>Atricle é como uma peça de roupa, uma entidade discreta que pode ser reutilizada em outro contexto.</li>
+      <li>Calças são como um article e podem ser usadas com uma roupa diferente.</li>
+      <li>Camisa é como um article e pode ser usada com calças diferentes</li>
+      <hr>
+
+      <h2>
+        < nav aria-label="primária"> , por que primária? porque pode haver outras nav´s posteriormente:<h2>
+            <nav aria-label="primária">
+              <a href="">Sobre</a>
+              <a href="">Produtos</a>
+              <a href="">Contato</a>
+            </nav>
+
+            <hr>
+
+            <h2>Abaixo conteúdo contido em main:</h2>
+
+            <main>
+              <h1>Bicicleta Bikcraft</h1>
+              <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem
+                equipada com os melhores acessórios, o que garante maior velocidade.</p>
+            </main>
+
+            <hr>
+
+            <h2>aria-label</h2>
+            <p>
+              <strong>
+                < article aria-label="livros"> Título da região visualmente escondido, mas lido pelo leitor de tela:
+              </strong>
+            </p>
+
+
+            <article aria-label="livros">
+              <p>O Senhor dos Anéis</p>
+              <p>O Hobbit</p>
+            </article>
+
+            <hr>
+
+
+            <h2>Abaixo conteúdo com < article aria-labelledby="celtitulos"> .</h2>
+            <p>Caso o título exista na tela, marque o mesmo com um id e use este atributo para criar uma relação entre eles.</p>
+            <p>Detalhe: <strong>aria-labelledby</strong> sendo definida, deve-se usar uma id no titulo com o mesmo nome definido na <strong>aria-labelledby.</strong></p>
+
+            <article aria-labelledby="celtitulo">
+              <h2 id="celtitulo">Celulares</h2>
+              <p>Conheça mais as marcas que vendemos no site</p>
+            </article>
+
+            <hr>
+
+</body>
+
+</html>
