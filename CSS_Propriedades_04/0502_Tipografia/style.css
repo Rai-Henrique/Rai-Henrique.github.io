@@ -1,0 +1,39 @@
+/*roboto é fonte para android
+app Segoe UI é paara desktop*/
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /*não tem apenas Gerogia porque pode ser que a máquina da pessoa não tenha essa tipografia instalada e com isso a máquina irá procurar por times e se não tiver times irá procurar por serif*/
+
+  font-size: 2rem;
+  /*auemnta ou dimunui o tamanho da letra*/
+
+  font-weight: 700;
+  /*é o peso da fonte, a fonte Georgia tem apneas o weight normal e bold, em números só funciona o 400, 500 e 700(se nao me engano), pra usar todos os vaalores de font-weight é só começar digitando "apple"que o vscode completa */
+
+  font-style: italic;
+  /*para tipografia Georgia*/
+  /*font-style: oblique;/*para tipografia San-serif(arial)*/
+
+  line-height: 1.3;
+  /*altura da linha, posso usar valores em rem também*/
+
+  /* text-decoration: underline; */
+  /*tiro(none) ou coloco o underline*/
+
+  text-transform: capitalize;
+  /*para colocar o texto todo em maiúsculo ou não, ou deixar as primeiras letras em maiúsculo*/
+
+  text-indent: 5rem;
+  /*dá umaa estrutura de parágrafos */
+
+  text-align: right;
+  /*para alinhar o texto*/
+
+  text-shadow: -5px 5px 3px rgb(116, 116, 136);
+  /*define sombreamento: px-esquerda/direita; px-cima/baixo; px-deixa a sombra nítida ou nao; color*/
+
+  letter-spacing: 0.05rem;
+  /*espaço entre as letras*/
+}
