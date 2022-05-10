@@ -1,0 +1,71 @@
+.bicicleta {
+  height: 1000px;
+
+  background-color: lightblue;
+
+  background-image: url("./bicicleta.jpg");
+
+  background-size: 250px 200px;
+  /*irá mexer no taamanho da imagem*/
+
+  background-repeat: no-repeat;
+  /*para evitar que a imagem seja repetida*/
+
+  background-size: cover;
+  /*o tamanho da imagem irá sempre ocupar o espaço completo de onde ela está contida*/
+
+  background-position: center top;
+  /* vai servir para quando a pessoa for diminuindo a tela, a imagem vai ficar centralizada no centro e quanto mais vai sendo minimizada, a tela vai focando na parte do top da tela */
+
+  display: flex; /*ativar flex para o h1 funcionar*/
+  /* background: lightblue url("./bicicleta.jpg") no-repeat cover center top ; */
+}
+
+h1 {
+  margin: auto;
+  /*só funcionou porque o display flex foi ativado logo a cima*/
+  background-color: #fff;
+  padding: 1rem 2rem;
+}
+
+.pattern {
+  height: 300px;
+
+  background-color: lightcoral;
+
+  background-image: url("./pattern.svg");
+  /*add imagem no fundo*/
+  /*por ser imagem svg ela não perderá seu valor após ser aumentada*/
+
+  background-repeat: repeat;
+  /*repeat-x; repeat-y, etc.*/
+
+  background-size: 80px;
+  /*tamanho das bolinhas aumentaram, pois o tamanho paadrao delas é 20px.*/
+}
+
+.linear {
+  height: 200px;
+
+  background-image: linear-gradient(
+    130deg,
+    lightblue 10%,
+    lightcoral 20%,
+    black 30%,
+    blue 50%,
+    green 60%,
+    violet 80%,
+    white 100%
+  );
+  /*do lado de cada valor, se eu adicionar uma %, o valor da % é que vai definir quem mais aparecerá*/
+  /*que a cor varie de lightblue para white*/
+  /*deg quer dizer que vai rotacionando*/
+  /*to righ mantém o lado padrão do lightblue de acordo com que ele tá*/
+}
+
+
+.radial{
+  height: 200px;
+  background-image: radial-gradient(circle, green, blue, white, red);
+  /*circle deixa bem redondo, se tirar pois fica oval*/
+}
