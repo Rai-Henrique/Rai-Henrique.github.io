@@ -1,0 +1,66 @@
+.h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* h1::before {
+  content: "Antes ";
+}
+
+h1::after {
+  content: " Depois";
+} */
+
+h1 {
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 20px;
+  background-color: #caf;
+
+  position: absolute;
+  /* sempre que definir(no filho(aqui é como se fosse um)) absolute, no pai deve ter position relative para o absolute entrar no fluxo do pai */
+
+  top: 20px;
+
+  z-index: -1;
+  /* para ficar por trás de todos */
+}
+
+/* estilizando li */
+
+ul {
+  list-style: none;
+  /* para poder substituir por outro tipo de estilo, só vai ficar no lugaar das bolinhas de li, porém o que for criado ficará no seu lugar */
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+li::before {
+  content: "";
+  /* jamais esquecer do centent, pois é ele que vai fazer tudo acontecer. */
+
+  display: inline-block;
+  /* por está mexendo em li(bolinhas) deve ter inline-block, pois ao definir width e height, vai dá desproporcionalidade */
+
+  width: 8px;
+
+  height: 8px;
+
+  background-color: #caf;
+
+  background: linear-gradient(#caf, #fff);
+
+  border: 2px solid #caf;
+
+  margin-right: 10px;
+
+  border-radius: 50%;
+  /* pois se eu mudar o width e heigth, será sempre equilibrado o border-radius */
+}
