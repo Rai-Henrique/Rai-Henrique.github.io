@@ -64,3 +64,11 @@ li::before {
   border-radius: 50%;
   /* pois se eu mudar o width e heigth, será sempre equilibrado o border-radius */
 }
+
+.p::first-line{
+  font-weight: bold;
+}
+
+.p::first-letter{
+  font-size: 2rem;
+}
