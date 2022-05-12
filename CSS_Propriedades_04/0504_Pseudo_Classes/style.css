@@ -1,0 +1,90 @@
+a {
+  display: inline-block;
+  background-color: #caf;
+  padding: 1rem 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #217;
+}
+
+.hover:hover {
+  background-color: #adf;
+  color: #147;
+  transition: 0.5s;
+}
+
+.focus:focus {
+  background-color: #cfa;
+  color: #371;
+
+  /* outline: none; */
+  /* remove a borda aposta pressionar tad até nessa no elemento */
+}
+
+.active:active {
+  background-color: #ffa;
+  color: #761;
+}
+
+/* .visited:visited {
+  background-color: #fda;
+  color: #731;
+} */
+
+/*SELETORES*/
+
+.lista-1 li:first-child {
+  background-color: #caf;
+  /*seletecionado o primeiro elemento*/
+}
+
+/* .lista-1 li {
+  background-color: #217 !important;
+  /*se seleciono apenas o li da lista-1, ainda sim o primeiro irá ficar com cor #caf, porém se ativo o valor  !important, todos receberão a mesma cor*/ /*
+} */
+
+.lista-1 li:last-child {
+  background-color: #cfa;
+  /* seleciona o último item */
+  /* nth-child(odd)=ímpares */
+  /* nth-child(even)=pares */
+}
+
+.lista-1 li:nth-child(2) {
+  background-color: #adf;
+  /* nth-child(odd)=ímpares */
+  /* nth-child(even)=pares */
+  /*  li:nth-child(2)=de 2 em 2 */
+}
+
+.lista-1 li:nth-child(3) {
+  background-color: #ffabad;
+  /* seleciona o tereceiro elemento */
+  /* nth-child(odd)=ímpares */
+  /* nth-child(even)=pares */
+  /*  li:nth-child(2)=de 2 em 2 */
+}
+
+.lista-1 li:nth-child(4) {
+  background-color: #123456;
+}
+
+.lista-2 li:nth-child(odd) {
+  background-color: #654321;
+}
+
+.lista-2 li:nth-child(even) {
+  background-color: #789123;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+/* :NOT */
+
+.lista-3 li:not(:first-child, :last-child, .terceiro) {
+  background-color: #789123;
+  /* que a cor seja para todos, menos para o primeiro e o segundo elemento */
+}

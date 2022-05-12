@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <a href="/index.html">Início.</a>
+
+  <h1>Pseudo Classes</h1>
+
+  <h2>Estado</h2>
+
+  <p>Permite definirmos o estilo de diferentes estados do elemento html.</p>
+
+  <h3>:hover</h3>
+  <li>Mouse por cima.</li><br><br>
+  <a class="hover" href="">Clique aqui</a>
+
+
+
+  <h3>:focus</h3>
+  <li>Elemento em foco, usando o teclado (tab).</li>
+
+  <li>é semelhante ao <strong>active</strong>, porém no <strong>active</strong> não muda de cor quando através do tab e sim por clique. </li>
+
+  <li>Há a propriedade <strong>outline: none;</strong> que tira a borda que indica aonde estamos sendo indicado através do leitor de tela. Com isso, geralmente é melhor não ativar o <strong>outline: none;</strong></li>
+
+  <br>
+  <br>
+  <a class="focus" href="">Clique aqui</a>
+
+  <h3>:active</h3>
+  <li>Quando clicamos no elemento.</li><br><br>
+  <a class="active" href="">Clique aqui</a>
+
+  <hr>
+
+
+  <!-- <h3>:visited</h3>
+  <li>Para links que já foram visitados.</li><br><br>
+  <a class="visited" href="">Clique aqui</a> -->
+
+
+
+
+  <h1>Seletores</h1>
+
+  <p class="first"><strong>:first-child</strong></p>
+  <ul>
+    <li>Seleciona o primeiro elemento.</li>
+  </ul>
+
+
+  <p class="last"><strong>:last-child</strong></p>
+  <ul>
+    <li>Seleciona o último elemento.</li>
+  </ul>
+
+
+  <p class="nth"><strong>:nth-child(4)</strong></p>
+  <ul>
+    <li> quarto elemento(4)</li>
+    <li> pares(even)</li>
+    <li> ímpares(odd)</li>
+    <li> de 3 em 3(3n).</li>
+  </ul>
+
+  <ol class="lista-1">
+    <li>Primeiro elemento</li>
+    <li>Segundo elemento</li>
+    <li>Terceiro elemento</li>
+    <li>Quarto elemento</li>
+    <li>Quinto elemento</li>
+  </ol>
+
+  <h4>Elementos com odd(ímpar) e even(par)</h4>
+
+  <ol class="lista-2">
+    <li>Primeiro elemento</li>
+    <li>Segundo elemento</li>
+    <li>Terceiro elemento</li>
+    <li>Quarto elemento</li>
+    <li>Quinto elemento</li>
+    <li>Sexto elemento</li>
+    <li>Sétimo elemento</li>
+    <li>Oitavo elemento</li>
+  </ol>
+
+  <hr>
+
+  <h3>:not</h3>
+  <p>O :not nega a seleção de um elemento específico.</p>
+
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">Lista com outras pseudo-classes:</a>
+
+  <ol class="lista-3">
+    <li>Primeiro elemento</li>
+    <li>Segundo elemento</li>
+    <li class="terceiro">Terceiro elemento</li>
+    <li>Quarto elemento</li>
+    <li>Quinto elemento</li>
+  </ol>
+</body>
+
+</html>
