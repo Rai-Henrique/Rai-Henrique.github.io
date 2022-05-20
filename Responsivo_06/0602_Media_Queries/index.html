@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <a href="/index.html">Início.</a>
+
+  <h1>Media Queries</h1>
+  <h2>@media</h2>
+  <strong>
+    <p>A @media gera um bloco de código que só será ativado caso a condição entre parênteses seja verdadeira.</p>
+  </strong>
+
+  <li>@media (max-width: 500px)
+    <ul>
+      <p>Que seja aplicado abaixo de 500px ou entre 0 e 500px seja ativo.</p>
+    </ul>
+  </li>
+
+  <li>@media (min-width: 600px)
+    <ul>
+      <p>Que seja aplicado acima de 600px em diante seja ativo.</p>
+      <p>@media (min-width: 800px), de 800 pra lá pode funcionar.</p>
+    </ul>
+  </li>
+
+  <li>@media (min-width: 800px) and (max-width: 900px)
+    <ul>
+      <p>Seja ativo entre 800px e 900px.</p>
+
+    </ul>
+  </li>
+
+
+  <p> Outras Condições</p>
+  Existem outras condições, como por exemplo se uma propriedade é suportada ou não pelo browser, ou se o CSS está sendo aplicado para tela ou impressão.
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"><br>
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries</a>
+
+  <hr>
+
+  <div>
+    <h1>Nossas Bicicletas</h1>
+    <img src="/HTML_e_CSS_Basico_01_/0216Imagem/img/bicicleta.jpg" alt="">
+    <p class="paragrafo">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem
+      equipada com os melhores acessórios, o que garante maior velocidade.</p>
+  </div>
+</body>
+
+</html>

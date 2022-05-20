@@ -1,0 +1,38 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+div {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+h1 {
+  grid-column: 1/-1;
+}
+
+/* de 0 a 500px */
+@media (max-width: 500px) {
+  .paragrafo {
+    font-size: 4rem;
+  }
+}
+
+/* de 0 a 700px */
+@media (max-width: 700px) {
+  img {
+    display: none;
+    /* jamais use essa propriedade */
+  }
+}
+
+/* de 600px pra lá */
+@media (min-width: 600px) {
+  h1 {
+    background-color: #d7d7d7;
+    color: red;
+  }
+}
