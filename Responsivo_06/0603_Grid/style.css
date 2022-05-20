@@ -1,0 +1,35 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+div {
+  display: grid;
+
+  /* grid-template-columns: 1fr 1fr ; */
+  /* ou repeat(2, 1fr) */
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* IMPORTANTE */
+  /* -repeat(auto-fit, minmax(valor em fr, px, etc)) Aqui as caixas vão pegar de ponta-ponta;
+     
+     -No Flexbox, as caixas vão sendo posicionada uma ao lado da outra(após ativar o display: flex;);
+     
+     -No Grid, na propriedade grid-templates-columns com o valor (repeat: auto-fit, 100px); ou seja, se crio 5 caixas, serão criadas caixas de 100px uma ao lado da outra até não dá mais e aí sim irá pular para a outra linha, como no Flexbox;
+     com caixas definidas em fr não funciona, pois fr preenche o espaço restante da caixa pai. */
+
+  gap: 1rem;
+}
+
+@media (min-width: 400px) {
+  .minmax img {
+    grid-row: 2;
+    /* de 400px pra lá que a img fique na linha 2, menos que isso fique na linha 1 como definido do html*/
+
+    /* OU usar ->>> order: 2; */
+  }
+}
+
+
+.galeria{
+  grid-template-columns: repeat(auto-fit, 150px);
+}
