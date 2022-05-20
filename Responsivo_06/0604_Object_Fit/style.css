@@ -1,0 +1,26 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.texto {
+  font-size: 2.25rem;
+  align-self: center;
+}
+
+.cover img {
+  /* img pq é ela que fcará do tamanho total de cover */
+  height: 100%;
+  object-fit: cover;
+  /* semelhante ao background-size */
+
+  object-position: center left;
+  /* ajustar a posição que será focada ao aproximar a tela */
+}
+
