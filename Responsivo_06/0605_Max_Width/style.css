@@ -1,0 +1,34 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1280px;
+
+  margin: 100px auto;
+  /* vai centralizar o conteúdo no meio, posso tbem subtituir o 0 por outro valor em número */
+}
+
+.texto {
+  max-width: 60ch;
+  /* serve pra controlar a laargura do texto, se nao tiver em ch, pois quanto mais estica a tela, mais o telo engrandece */
+  /* importante usar para textos */
+
+  align-self: center;
+}
+
+.cover img {
+  /* img pq é ela que fcará do tamanho total de cover */
+  height: 100%;
+  object-fit: cover;
+  /* semelhante ao background-size */
+
+  object-position: center left;
+  /* ajustar a posição que será focada ao aproximar a tela */
+}
+
+/* Abaixo a continuação da aula de max-width */
