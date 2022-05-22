@@ -1,0 +1,246 @@
+/* ESTILOS GERAIS */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background: #f7f7f7;
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.conteudo {
+  /* max-width: 0 auto; */
+
+  max-width: 1000px;
+
+  /* 1000px porque o conteúdo irá ficar com aspecto centralizado na tela(só o ouro, queria saber por que o site não ficava como está agora, o importante é que agora eu sei essa budega!) */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+/* ESTILO HEADER */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu a {
+  background: #fff;
+  padding: 16px 32px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #000;
+  display: block;
+  border: 2px solid transparent;
+}
+
+.header {
+  /* para alinhar a img ao centro */
+
+  display: grid;
+  justify-items: center;
+
+  gap: 60px;
+  /* para separar a img dos a */
+}
+
+.menu a:hover {
+  border-color: #e21;
+  /* somente essa definiçao não irá aparecer na tela, por isso devo ir no "a" contido no menu para definir a borda que será exibida ao passar o mouse por cima */
+}
+
+/* ESTILO CONTEÚDO ROW1 */
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.introducao {
+  display: grid;
+  align-content: center;
+  justify-items: end;
+  text-align: right;
+  padding: 40px;
+  gap: 20px;
+  background: #fff;
+  position: relative; /*⚠️*/
+}
+h1 {
+  font-size: 2rem;
+}
+
+.botao {
+  background: #e21;
+  border-radius: 4px;
+  padding: 16px 32px;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+}
+.botao:hover {
+  background: #900;
+}
+
+.introducao::before {
+  content: "";
+  background: #e21;
+  width: 60px;
+  height: 4px;
+  position: absolute; /*⚠️*/
+  top: 30px;
+  right: -30px;
+}
+
+/* ESTILO CONTEÚDO ROW2(VANTAGENS BIKCRAFT) */
+
+.subtitulo {
+  font-size: 4rem;
+  color: #00000333;
+  text-align: right;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  padding: 40px;
+  background: url("onda.svg");
+}
+
+/* ESTILO CONTEÚDO ROW2(ESPECIFICAÇÕES) */
+
+.vantagens {
+  padding: 40px;
+  background: #fff;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  /* primeira coluna em auto quando diminui a tela a primeiraa img some */
+
+  gap: 10px 20px;
+  padding: 35px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 4px solid transparent; /*⚠️*/ /*⚠️*/
+  /* 4px aqui para dá um pocuo mais de ênfase quando o mouse estiver passando por cima */
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.vantagens-item:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+.vantagens-item:hover {
+  border-left: 4px solid #e21; /*⚠️*/ /*⚠️*/
+}
+
+.rodape {
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+
+  box-sizing: border-box;
+  /* com essa proprieadade eu consigo tirar o a barra de scrol no sentido horizontal que é criada após definir 100% width */
+  /*se por acaso eu usasse essa propriedade eu teria que usar em 100% de width e não 94% */
+}
+
+/* exercício */
+
+.bike {
+  object-position: center;
+  object-fit: cover;
+
+  height: 100%;
+  /* iamgem não irá diminuir conforme a diminuição da tela E TAMBÉÉÉÉMMM irá diminuir do mesmo tamanho do conteúdo ao lado. */ /*⚠️*/
+}
+
+@media (max-width: 1000px) {
+  /* que só irá funcionar a partir de 0px até 1000px, passou disso o site ficará normal */
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  /* que só irá funcionar a partir de 0px até 600px, passou disso o site ficará normal */
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao::before {
+    display: none;
+  }
+  .introducao {
+    text-align: left;
+    justify-items: left;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+  .header {
+    gap: 30px;
+  }
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  /* que só irá funcionar a partir de 0px até 414px, passou disso o site ficará normal */
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 280px){
+/* que só irá funcionar a partir de 0px até 280px280px, passou disso o site ficará normal */
+  .menu{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
