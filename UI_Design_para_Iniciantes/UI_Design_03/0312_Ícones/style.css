@@ -1,0 +1,19 @@
+body {
+  background-color: #494949;
+  color: #b6adad;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+strong {
+  color: #ffffff;
+}
+
+h1,
+h2 {
+  color: #ffffff;
+}
